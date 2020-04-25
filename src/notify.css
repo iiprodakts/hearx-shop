@@ -1,0 +1,45 @@
+
+
+
+.notify-success{
+
+    background-color: darkgreen; 
+    width: 121rem; 
+    text-align: center;
+    height: 10rem;
+    font-size: 1.5rem;
+    bottom: -3vh;
+    position: absolute;
+    
+}
+
+.notify-warn{
+
+    background-color: #ffcc66; 
+    width: 121rem; 
+    text-align: center;
+    height: 10rem;
+    font-size: 1.5rem;
+    color: red;
+    
+}
+
+.notify-info{
+
+    width: 121rem; 
+    text-align: center;
+    height: 5rem;
+    font-size: 1.5rem;
+    position: absolute;
+    bottom: -3vh
+    
+}
+
+.notify-error{
+
+    width: 121rem; 
+    text-align: center;
+    height: 5rem;
+    font-size: 1.5rem;
+    
+}
