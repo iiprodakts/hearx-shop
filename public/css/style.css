@@ -8122,6 +8122,9 @@ p {
       padding: 0;
       position: absolute;
       right: 15%; }
+      @media only screen and (max-width: 450px) {
+        .hearx__header--shop__list {
+          right: 2%; } }
       .hearx__header--shop__list--item {
         display: inline-block;
         margin-right: 3.5rem;
@@ -8152,7 +8155,7 @@ p {
       height: 40vh; } }
   @media only screen and (max-width: 450px) {
     .hearx__hero {
-      height: 40vh; } }
+      height: 35vh; } }
   .hearx__hero--header {
     width: 40%;
     float: left; }
@@ -8191,6 +8194,7 @@ p {
           left: 3%;
           padding: 1%;
           padding-left: 5%;
+          padding-top: 1.5rem;
           text-align: center;
           top: 4rem; } }
       .hearx__hero--header__message--text-1 {
@@ -8236,8 +8240,8 @@ p {
             left: 30%; } }
         @media only screen and (max-width: 450px) {
           .hearx__hero--content__arrived--fig img {
-            width: 60%;
-            left: 30%; } }
+            width: 70%;
+            left: 20%; } }
     .hearx__hero--content__btn {
       width: 25rem;
       border: none;
@@ -8331,6 +8335,9 @@ p {
     .hearx__products--card__image {
       width: 80%;
       margin-bottom: 4rem; }
+      @media only screen and (max-width: 450px) {
+        .hearx__products--card__image {
+          width: 90%; } }
       .hearx__products--card__image img {
         width: 80%; }
     .hearx__products--card__product-name {
@@ -8356,6 +8363,9 @@ p {
       cursor: pointer; }
       .hearx__products--card__product-add-cart:hover {
         color: #009999; }
+      @media only screen and (max-width: 450px) {
+        .hearx__products--card__product-add-cart {
+          width: 14rem; } }
 
 .hearx__upcoming {
   width: 100%;
@@ -8369,6 +8379,9 @@ p {
     width: 40%;
     margin-bottom: 10rem;
     padding-left: 5%; }
+    @media only screen and (max-width: 450px) {
+      .hearx__upcoming--title {
+        width: 70%; } }
     .hearx__upcoming--title-year {
       background-color: rgba(128, 128, 128, 0.05);
       padding: 3rem;
@@ -8410,6 +8423,9 @@ p {
       .hearx__upcoming--upcategs__primary--i {
         margin-bottom: 1rem;
         position: relative; }
+        @media only screen and (max-width: 450px) {
+          .hearx__upcoming--upcategs__primary--i {
+            margin-bottom: .5rem; } }
         .hearx__upcoming--upcategs__primary--i-img {
           width: 98%; }
         .hearx__upcoming--upcategs__primary--i--text-1 {
@@ -8421,6 +8437,9 @@ p {
           color: #FFF;
           background-color: #cc3333;
           padding: .5rem 2rem; }
+          @media only screen and (max-width: 450px) {
+            .hearx__upcoming--upcategs__primary--i--text-1 {
+              right: 10%; } }
         .hearx__upcoming--upcategs__primary--i--text-2 {
           display: block;
           font-size: 1.3rem;
@@ -8460,6 +8479,12 @@ p {
         float: none;
         width: 50%;
         margin: 0 auto; } }
+    @media only screen and (max-width: 450px) {
+      .hearx__upcoming--content {
+        float: none;
+        width: 90%;
+        left: 10%;
+        position: relative; } }
     .hearx__upcoming--content__title-1 {
       width: 80%;
       margin-bottom: 2rem;
@@ -8483,6 +8508,9 @@ p {
           width: 70%;
           height: 4rem;
           text-align: center; }
+          @media only screen and (max-width: 450px) {
+            .hearx__upcoming--content__form--input-container-input {
+              border: solid 0.2rem #009999; } }
         .hearx__upcoming--content__form--input-container-btn {
           width: 15rem;
           border: none;
@@ -8498,6 +8526,9 @@ p {
           .hearx__upcoming--content__form--input-container-btn:hover {
             color: #FFF;
             background-color: rgba(0, 153, 153, 0.9); }
+          @media only screen and (max-width: 450px) {
+            .hearx__upcoming--content__form--input-container-btn {
+              margin-left: 3.5rem; } }
       .hearx__upcoming--content__form--btn-container {
         width: 80%; }
 
@@ -8576,6 +8607,9 @@ p {
       @media only screen and (max-width: 600px) {
         .hearx__footer--shop__social {
           width: 50%; } }
+      @media only screen and (max-width: 450px) {
+        .hearx__footer--shop__social {
+          width: 35%; } }
       .hearx__footer--shop__social-i-container {
         background-color: #FFF;
         width: 100%;
@@ -8613,6 +8647,10 @@ p {
         .hearx__footer--shop__list {
           width: 50%;
           padding-left: 5%; } }
+      @media only screen and (max-width: 450px) {
+        .hearx__footer--shop__list {
+          width: 65%;
+          padding-left: 10%; } }
       .hearx__footer--shop__list--item {
         display: inline-block;
         margin-right: 2.5rem;
