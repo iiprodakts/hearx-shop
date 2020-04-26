@@ -1,7 +1,7 @@
 
-import home from '../Home/reducer'
+import shop from '../Home/reducer'
 
 export default {
 
-    home
+    shop
 }

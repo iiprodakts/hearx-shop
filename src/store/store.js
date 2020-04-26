@@ -5,17 +5,15 @@ import thunk from 'redux-thunk'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import history from '../history' 
 
-// import {routerMiddleware} from '../middlwares/reduxroute'
-// import apiMiddleware from '../middlwares/api'
+
 import reducers from '../reducers/reducers'
-// import startListener from '../utilities/listener'
-// import {push} from '../middlwares/withcustommiddlewares'
+import {persistState,loadStateFromStorage} from './persistor'
 
 
-// const catchHistoryActionCreators = routerMiddleware(history)
 
 const store = createStore(
         reducers,
+        loadStateFromStorage(),
         composeWithDevTools(
             applyMiddleware(
                 thunk
@@ -23,7 +21,8 @@ const store = createStore(
         )
     )
 
-// startListener(history,store)
+store.subscribe(()=>{persistState(store.getState(),true)})
+
 export {
     store,
     history

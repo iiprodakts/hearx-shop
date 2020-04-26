@@ -5,13 +5,10 @@ import {connect} from 'react-redux'
 import * as actions from './actions'
 
 import Header from './header/header'
-// import Search from './search/search'
-// import Identity from './identity/identity'
-// import Jobseeker from './jobseeker/jobseeker'
-// import Jobdash from './jobdash/jobdash'
-// import Top from './top/top'
-// import Employer from './employer/employer'
-// import Candidate from './candidate/candidate'
+import Hero from './hero/hero'
+import Products from './products/products'
+import Upcoming from './upcoming/upcoming'
+import Footer from './footer/footer'
 
 
 
@@ -30,34 +27,19 @@ class Home extends Component{
         // console.log('THE LOCATION STATE SHAPE')
         // console.log(this.props.state.pathname)
 
+        const {shop,actions} = this.props
+        // const {products} = shop
+
         return(
 
-             <article className="grid-row">
+             <article className="hearx">
 
-                <div className="home">
-
-                    <div className="mg-bottom-fd-hg">
-
-                        
-                        <Header />
+                  <Header shop={shop} />
+                  <Hero />
+                  <Products shop={shop} actions={actions} />
+                  <Upcoming />
+                  <Footer />
                      
-                        <strong className="clearfix" />
-                       
-                       
-                    </div>
-                    {/* <div>
-                        <Identity />
-                    </div>
-
-                    <div>
-                        <Jobseeker />
-                    </div>
-                    <div>
-                        <Jobdash />
-                    </div> */}
-                    
-
-                </div>
                 
              </article>
         )
@@ -70,10 +52,9 @@ class Home extends Component{
 
 const mapStateToProps = (state)=>{
 
+    const {shop} = state
     return{
-        state:{
-            ...state.router
-        }
+       shop
     }
 }
 
